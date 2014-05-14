@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enrolment Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/bootstrap.js"></script>
+    <script type="text/javascript">
+    
+    $(document).ready(function(){
+    
+    if(navigator.onLine == true)
+    {
+        $("#networkMessage").css("display","none");
+    }
+    
+    });
+    
+    </script>
+</head>
+<body>
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                 <img src="img/logo.png" alt="College Logo" class="brand" style="display:inline;"></img>
+                 <a href="index.php" class="brand" accesskey="0">My eILP</a>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="span12">
+            <center>
+                <img src="img/ec_logo.jpg" alt="Exeter College Logo" style="max-width:100%; height:auto;"></img>
+            </center>
+        </div>
+        <div class="span12" id="networkMessage"><br><br>
+            <div class="alert alert-error"><p style="font-size:2em;">Please ensure that you are connected to the internet and click <a href="javascript:window.location.reload()">here</a> to try again.</p></div>
+        </div>
+        <br><br>
+        <a href="https://mis.exe-coll.ac.uk/toby/dashboard/index.ihtml?report=8" class="btn btn-primary span12"><span style="font-size:2em;"><br>Load Dashboard<br><br></span></a>
+        
+        </div>
+    </div>
+</body>
+</html>
