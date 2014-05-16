@@ -13,8 +13,7 @@
             $(document).ready(function(){
                 app.initialize();
 
-                var bg = "url('img/bg" + (Math.floor(Math.random() * 3) + 1) + ".jpg')";
-                $("body").css("background-image", bg);
+
 
                 $.get("https://mis.exe-coll.ac.uk/php/apps/staff/is_loggedin.htm", function(data) {
 
@@ -26,7 +25,9 @@
             });
         </script>
     </head>
-    <body style="background-image: url('img/bg1.jpg'); background-color:#0066CC background-repeat:no-repeat;">
+    <body style="background-image: url('img/bg2.jpg'); background-color:#0066CC; background-repeat:no-repeat;
+background-size:cover;
+">
     
     <nav class="navbar navbar-default" role="navigation">
         <div class="container-fluid">
