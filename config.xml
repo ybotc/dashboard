@@ -1,140 +1,102 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
-<widget xmlns = "http://www.w3.org/ns/widgets" 
-	xmlns:gap = "http://phonegap.com/ns/1.0"
-	id = "com.phonegap.hello-world"
-	version = "1.0.0">
-
-<name>Dashboard</name>
-
-<description>
-Exeter College Enrolment Dashboard
-</description>
-
-
-<author href="http://phonegap.com" email="support@phonegap.com">
-PhoneGap Team
-</author>
-
-
-<!--
-	If you do not want any permissions to be added to your app, add the
-	following tag to your config.xml; you will still have the INTERNET
-	permission on your app, which PhoneGap requires.
--->
-
-
-<preference name="permissions" value="none"/>
-		<preference name="phonegap-version" value="3.4.0" />
-		<preference name="android-build-tool" value="gradle" />
-		<preference name="orientation" value="default" />
-		<preference name="fullscreen" value="false" />
-		<preference name="target-device" value="universal" />
-		<preference name="webviewbounce" value="true" />
-		<preference name="prerendered-icon" value="false" />
-		<preference name="stay-in-webview" value="true" />
-		<preference name="ios-statusbarstyle" value="black-opaque" />
-		<preference name="detect-data-types" value="true" />
-		<preference name="exit-on-suspend" value="true" />
-		<preference name="show-splash-screen-spinner" value="true" />
-		<preference name="auto-hide-splash-screen" value="true" />
-		<preference name="FadeSplashScreen " value="false" />
-		<preference name="EnableViewportScale" value="false" />
-		<preference name="MediaPlaybackRequiresUserAction" value="false" />
-		<preference name="AllowInlineMediaPlayback" value="true" />
-		<preference name="BackupWebStorage" value="none" />
-		<preference name="TopActivityIndicator" value="white" />
-		<preference name="KeyboardDisplayRequiresUserAction" value="true" />
-		<preference name="KeyboardShrinksView " value="true" />
-		<preference name="HideKeyboardFormAccessoryBar" value="true" />
-		<preference name="SuppressesIncrementalRendering" value="false" />
-		<preference name="windows-identity-name" value="" />
-		<preference name="android-installLocation" value="auto" />
-		<preference name="SplashScreenDelay" value="2000" />
-		<preference name="ErrorUrl" value="null" />
-		<preference name="BackgroundColor" value="0x000000" />
-		<preference name="DisallowOverscroll" value="true" />
-		<preference name="LoadingDialog" value="," />
-		<preference name="LoadUrlTimeoutValue" value="null" />
-
-<!-- Customize your app and platform with the preference element. -->
-
-<!-- Plugins -->
-
-<!-- Core plugins -->
-
-
-
-
-<!-- Third party plugins -->
-
-<!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
-
-<!--
-	<gap:plugin name="com.phonegap.plugins.barcodescanner" />
--->
-
-
-<!-- Define app icon for each platform. This is a relative path to config.xml.
-	For e.g. if you place an icon.png inside res folder, you should modify the
-	src in the following setting to "res/icon.png" -->
-
-
-<icon src="icon.png" />
-<icon src="res/icon/android/icon-36-ldpi.png" gap:platform="android" gap:qualifier="ldpi" />
-<icon src="res/icon/android/icon-48-mdpi.png" gap:platform="android" gap:qualifier="mdpi" />
-<icon src="res/icon/android/icon-72-hdpi.png" gap:platform="android" gap:qualifier="hdpi" />
-<icon src="res/icon/android/icon-96-xhdpi.png" gap:platform="android" gap:qualifier="xhdpi" />
-
-<icon src="res/icon/blackberry/icon-80.png" gap:platform="blackberry" />
-<icon src="res/icon/blackberry/icon-80.png" gap:platform="blackberry" gap:state="hover"/>
-
-<icon src="res/icon/ios/icon-57.png" gap:platform="ios" width="57" height="57" />
-<icon src="res/icon/ios/icon-72.png" gap:platform="ios" width="72" height="72" />
-<icon src="res/icon/ios/icon-57-2x.png" gap:platform="ios" width="114" height="114" />
-<icon src="res/icon/ios/icon-72-2x.png" gap:platform="ios" width="144" height="144" />
-
-<icon src="res/icon/webos/icon-64.png" gap:platform="webos" />
-
-<icon src="res/icon/windows-phone/icon-48.png" gap:platform="winphone" />
-<icon src="res/icon/windows-phone/icon-173.png" gap:platform="winphone" gap:role="background" />
-
-
-
-<!-- Define app splash screen for each platform. -->
-<gap:splash src="res/screen/android/screen-ldpi-portrait.png" gap:platform="android" gap:qualifier="port-ldpi" />
-<gap:splash src="res/screen/android/screen-mdpi-portrait.png" gap:platform="android" gap:qualifier="port-mdpi" />
-<gap:splash src="res/screen/android/screen-hdpi-portrait.png" gap:platform="android" gap:qualifier="port-hdpi" />
-<gap:splash src="res/screen/android/screen-xhdpi-portrait.png" gap:platform="android" gap:qualifier="port-xhdpi" />
-
-<gap:splash src="res/screen/blackberry/screen-225.png" gap:platform="blackberry" />
-
-<gap:splash src="res/screen/ios/screen-iphone-portrait.png" gap:platform="ios" width="320" height="480" />
-<gap:splash src="res/screen/ios/screen-iphone-portrait-2x.png" gap:platform="ios" width="640" height="960" />
-<gap:splash src="res/screen/ios/screen-iphone-portrait-568h-2x.png" gap:platform="ios" width="640" height="1136" />
-<gap:splash src="res/screen/ios/screen-ipad-portrait.png" gap:platform="ios" width="768" height="1024" />
-<gap:splash src="res/screen/ios/screen-ipad-landscape.png" gap:platform="ios" width="1024" height="768" />
-
-<gap:splash src="res/screen/windows-phone/screen-portrait.jpg" gap:platform="winphone" />
-
-
-<!--
-	Define access to external domains.
-	<access /> - a blank access tag denies access to all external resources.
-	<access origin="*" /> - a wildcard access tag allows access to all external resource.
-	Otherwise, you can specify specific domains:
--->
-
-
-<access origin="https://mis-exe-coll.ac.uk/*"/>
-<allow-navigation href="https://mis-exe-coll.ac.uk/*" />
-
-	
-
-<!--
-	<access origin="http://phonegap.com" /> - allow any secure requests to http://phonegap.com/
-	<access origin="http://phonegap.com" subdomains="true" /> - same as above, but including subdomains, such as http://build.phonegap.com/
-	<access origin="http://phonegap.com" browserOnly="true" /> - only allows http://phonegap.com to be opened by the child browser.
--->
+<?xml version='1.0' encoding='UTF-8'?>
+<widget id='io.cordova.helloCordova' version='2.0.0' xmlns='http://www.w3.org/ns/widgets'>
+    <name>
+        Hello Cordova
+    </name>
+    <description>
+         A sample Apache Cordova application that responds to the deviceready
+        event. 
+    </description>
+    <author email='dev@cordova.apache.org' href='http://cordova.io'>
+         Apache Cordova Team 
+    </author>
+    <access origin='*'/>
+    <content src='index.html'/>
+    <preference name='AllowInlineMediaPlayback' value='false'/>
+    <preference name='BackupWebStorage' value='cloud'/>
+    <preference name='DisallowOverscroll' value='false'/>
+    <preference name='EnableViewportScale' value='false'/>
+    <preference name='KeyboardDisplayRequiresUserAction' value='true'/>
+    <preference name='MediaPlaybackRequiresUserAction' value='false'/>
+    <preference name='SuppressesIncrementalRendering' value='false'/>
+    <preference name='TopActivityIndicator' value='gray'/>
+    <preference name='GapBetweenPages' value='0'/>
+    <preference name='PageLength' value='0'/>
+    <preference name='PaginationBreakingMode' value='page'/>
+    <preference name='PaginationMode' value='unpaginated'/>
+    <feature name='LocalStorage'>
+        <param name='ios-package' value='CDVLocalStorage'/>
+    </feature>
+    <feature name='Media'>
+        <param name='ios-package' value='CDVSound'/>
+    </feature>
+    <feature name='Globalization'>
+        <param name='ios-package' value='CDVGlobalization'/>
+    </feature>
+    <feature name='InAppBrowser'>
+        <param name='ios-package' value='CDVInAppBrowser'/>
+    </feature>
+    <feature name='File'>
+        <param name='ios-package' value='CDVFile'/>
+        <param name='onload' value='true'/>
+    </feature>
+    <feature name='FileTransfer'>
+        <param name='ios-package' value='CDVFileTransfer'/>
+    </feature>
+    <feature name='Vibration'>
+        <param name='ios-package' value='CDVVibration'/>
+    </feature>
+    <feature name='SplashScreen'>
+        <param name='ios-package' value='CDVSplashScreen'/>
+        <param name='onload' value='true'/>
+    </feature>
+    <feature name='Notification'>
+        <param name='ios-package' value='CDVNotification'/>
+    </feature>
+    <feature name='Accelerometer'>
+        <param name='ios-package' value='CDVAccelerometer'/>
+    </feature>
+    <feature name='Console'>
+        <param name='ios-package' value='CDVLogger'/>
+    </feature>
+    <feature name='Battery'>
+        <param name='ios-package' value='CDVBattery'/>
+    </feature>
+    <feature name='NetworkStatus'>
+        <param name='ios-package' value='CDVConnection'/>
+    </feature>
+    <feature name='Geolocation'>
+        <param name='ios-package' value='CDVLocation'/>
+    </feature>
+    <feature name='Device'>
+        <param name='ios-package' value='CDVDevice'/>
+    </feature>
+    <feature name='Compass'>
+        <param name='ios-package' value='CDVCompass'/>
+    </feature>
+    <feature name='Contacts'>
+        <param name='ios-package' value='CDVContacts'/>
+    </feature>
+    <feature name='Capture'>
+        <param name='ios-package' value='CDVCapture'/>
+    </feature>
+    <feature name='Camera'>
+        <param name='ios-package' value='CDVCamera'/>
+    </feature>
+    <preference name='permissions' value='none'/>
+    <preference name='phonegap-version' value='3.4.0'/>
+    <preference name='orientation' value='default'/>
+    <preference name='target-device' value='universal'/>
+    <preference name='fullscreen' value='true'/>
+    <preference name='webviewbounce' value='true'/>
+    <preference name='prerendered-icon' value='true'/>
+    <preference name='stay-in-webview' value='false'/>
+    <preference name='ios-statusbarstyle' value='black-opaque'/>
+    <preference name='detect-data-types' value='true'/>
+    <preference name='exit-on-suspend' value='false'/>
+    <preference name='show-splash-screen-spinner' value='true'/>
+    <preference name='auto-hide-splash-screen' value='true'/>
+    <preference name='disable-cursor' value='false'/>
+    <preference name='android-minSdkVersion' value='7'/>
+    <preference name='android-installLocation' value='auto'/>
 </widget>
