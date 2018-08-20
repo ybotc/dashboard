@@ -17,7 +17,7 @@
          Toby 
   </author>
     
-    
+  <allow-navigation href="*" />  
     
     
 </widget>
